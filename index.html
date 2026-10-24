@@ -28,17 +28,12 @@
       min-height: 100vh;
       width: 100%;
 
-      /* ❌ BROKEN INITIAL CODE (Hardcoded margins break layout on resize!): */
-      margin-top: 150px;
-      margin-left: 200px;
-
-      /* ✅ FLEXBOX SOLUTION (Uncomment these 3 lines and remove the margins above):
       display: flex;
-      justify-content: center;  /* Horizontally centers the modal card */
-      align-items: center;      /* Vertically centers the modal card */
+      justify-content: center;
+      align-items: center;
       margin-top: 0;
       margin-left: 0;
-      */
+      
     }
 
     /* ==========================================================================
@@ -74,16 +69,11 @@
       padding-top: 16px;
       border-top: 1px solid #e2e8f0;
 
-      /* ❌ BROKEN INITIAL CODE (Fixed margin pushes buttons outside the modal!): */
-      margin-left: 350px;
-      white-space: nowrap;
-
-      /* ✅ FLEXBOX SOLUTION (Uncomment these 3 lines and remove margin-left above):
       display: flex;
-      justify-content: flex-end; /* Aligns buttons cleanly to the right edge */
+      justify-content: flex-end;
       gap: 12px;                 /* Dynamic gap between action buttons */
       margin-left: 0;
-      */
+      
     }
 
     /* ==========================================================================
